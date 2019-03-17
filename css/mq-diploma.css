@@ -23,7 +23,6 @@ body {
 }
 .download_apple_store, .get_on_google_play {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #5e42b0;
@@ -59,12 +58,12 @@ body {
   }
   .top_titles {
     width: 100%;
-    height: 140px;
+    /* height: 140px; */
     max-width: 380px;
   }
   .be_recruited {
     font-size: 1.75rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -77,7 +76,7 @@ body {
   .play_college_sports {
     /* display: block; */
     font-size: 1.75rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -91,9 +90,7 @@ body {
   .store_buttons {
     width: 100%;
     margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 64px;
   }
   .download_apple_store, .get_on_google_play {
@@ -101,7 +98,8 @@ body {
     width: 87.5%;
     max-width: 320px;
     height: 2.1875rem;
-    z-index: 124;
+    margin-left: auto;
+    margin-right: auto;
   }
   .download_apple_store {
     margin-bottom: 14px;
@@ -112,7 +110,7 @@ body {
     height: 1.5rem;
   }
   .dbl_lin1, .dbl_lin2 {
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
   }
 }
 
@@ -122,20 +120,18 @@ body {
     background-image: url("../images/export_smart_768.png");
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
   .surface_logo {
     height: 56px;
     width: 205px;
-    /* margin: 39px auto 0 calc((100% - 205px) / 2); */
   }
   .top_titles {
     width: 100%;
   }
   .be_recruited {
     font-size: 4rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 4rem;
@@ -147,7 +143,7 @@ body {
   }
   .play_college_sports {
     font-size: 4rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 5rem;
@@ -160,7 +156,6 @@ body {
   }
   .store_buttons {
     width: 100%;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -183,10 +178,10 @@ body {
   }
   .dbl_lin1 {
     font-family: "OpenSans";
-    font-weight: lighter;
+    font-weight: 400;
   }
   .dbl_lin2 {
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     font-weight: bold;
   }
   .store_buttons_icon {
@@ -201,7 +196,6 @@ body {
     background-image: url("../images/export_smart_1920.png");
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
   .surface_logo {
@@ -213,7 +207,7 @@ body {
   }
   .be_recruited {
     font-size: 5rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 1.4;
@@ -226,7 +220,7 @@ body {
   }
   .play_college_sports {
     font-size: 5rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 1.4;
@@ -239,7 +233,6 @@ body {
     z-index: 100;
   }
   .store_buttons {
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -262,10 +255,10 @@ body {
   }
   .dbl_lin1 {
     font-family: "OpenSans";
-    font-weight: lighter;
+    font-weight: 400;
   }
   .dbl_lin2 {
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     font-weight: bold;
   }
   .store_buttons_icon {
@@ -277,6 +270,9 @@ body {
 /* === Styles for athlets === */
   .athlets {
     margin: 0;
+    padding: 0;
+  }
+  .athlets_pre_header {
     padding: 0;
   }
   .athlets_pre_header_text1::after,
@@ -296,7 +292,7 @@ body {
   @media (max-width:640px) {
     .athlets_title {
       font-size: 3.5rem;
-      font-family: "OpenSansBold";
+      font-family: "OpenSans";
       color: #e7e7e7;
       font-weight: bold;
       line-height: 1.2em;
@@ -312,31 +308,24 @@ body {
     }
     .athlets .athlets_color1 {
       background-color: #ffffff;
-      height: 160px;
-      padding: 30px 0 0 0;
+      /* height: 160px; */
+      padding: 30px 0 60px 0;
     }
     .athlets .athlets_color2 {
       background-color: #f5f4f9;
-      height: 263px;
-      padding: 60px 0 0 0;
+      /* height: 263px; */
+      padding: 60px 0 60px 0;
     }
     .athlets .athlets_color3 {
       background-color: #5e42b0;
-      height: 230px;
-      padding: 60px 0 0 0;
+      /* height: 230px; */
+      padding: 30px 0 30px 0;
     }
     .athlets_info_header {
       margin: 0 0 0 20px;
       display: flex;
-      flex-direction: row;
       flex-wrap: nowrap;
       align-items: center;
-    }
-    .athlets_pre-header {
-      flex-direction: column;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
     }
     .athlets_pre_header_text {
       font-size: 1rem;
@@ -389,7 +378,7 @@ body {
 @media (min-width: 641px) and (max-width:960px) {
   .athlets_title {
     font-size: 5rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #e7e7e7;
     font-weight: bold;
     line-height: 1.2;
@@ -409,18 +398,18 @@ body {
   }
   .athlets .athlets_color1 {
     background-color: #ffffff;
-    height: 160px;
-    padding: 30px 0 0 0;
+    /* height: 160px; */
+    padding: 20px 0 40px 0;
   }
   .athlets .athlets_color2 {
     background-color: #f5f4f9;
-    height: 236px;
-    padding: 40px 0 0 0;
+    /* height: 236px; */
+    padding: 40px 0 10px 0;
   }
   .athlets .athlets_color3 {
     background-color: #5e42b0;
-    height: 180px;
-    padding: 40px 0 0 0;
+    /* height: 180px; */
+    padding: 40px 0 20px 0;
   }
   .footballer1 {
     /* background-image: url("../images/footballer_497.png"); */
@@ -438,15 +427,8 @@ body {
   .athlets_info_header {
     margin: 0 0 0 20px;
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-  }
-  .athlets_pre-header {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
   }
   .athlets_pre_header_text {
     font-size: 1.5rem;
@@ -499,7 +481,7 @@ body {
 @media (min-width: 961px) {
   .athlets_title {
     font-size: 4rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     color: #e7e7e7;
     font-weight: bold;
     line-height: 1.2;
@@ -519,18 +501,18 @@ body {
   }
   .athlets .athlets_color1 {
     background-color: #ffffff;
-    height: 265px;
-    padding: 110px 0 0 0;
+    /* height: 265px; */
+    padding: 110px 0 80px 0;
   }
   .athlets .athlets_color2 {
     background-color: #f5f4f9;
-    height: 249px;
-    padding: 60px 0 0 0;
+    /* height: 249px; */
+    padding: 60px 0 90px 0;
   }
   .athlets .athlets_color3 {
     background-color: #5e42b0;
-    height: 223px;
-    padding: 60px 0 0 0;
+    /* height: 223px; */
+    padding: 60px 0 60px 0;
   }
   .footballer1 {
     /* background-image: url("../images/footballer_566.png"); */
@@ -548,15 +530,8 @@ body {
   .athlets_info_header {
     margin: 0 0 0 20px;
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-  }
-  .athlets_pre-header {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
   }
   .athlets_pre_header_text {
     font-size: 1.5rem;
@@ -633,18 +608,18 @@ body {
   }
   .players .athlets_color1 {
     background-color: #ffffff;
-    height: 160px;
-    padding: 30px 0 0 0;
+    /* height: 160px; */
+    padding: 30px 0 30px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
-    height: 263px;
-    padding: 60px 0 0 0;
+    /* height: 263px; */
+    padding: 60px 0 40px 0;
   }
   .players .athlets_color3 {
     background-color: #090c35;
-    height: 230px;
-    padding: 60px 0 0 0;
+    /* height: 230px; */
+    padding: 60px 0 40px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -673,18 +648,18 @@ body {
   }
   .players .athlets_color1 {
     background-color: #ffffff;
-    height: 230px;
-    padding: 30px 0 0 0;
+    /* height: 230px; */
+    padding: 30px 0 10px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
-    height: 181px;
-    padding: 40px 0 0 0;
+    /* height: 181px; */
+    padding: 30px 0 10px 0;
   }
   .players .athlets_color3 {
     background-color: #090c35;
-    height: 180px;
-    padding: 40px 0 0 0;
+    /* height: 180px; */
+    padding: 30px 0 20px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -715,18 +690,18 @@ body {
   }
   .players .athlets_color1 {
     background-color: #ffffff;
-    height: 265px;
-    padding: 110px 0 0 0;
+    /* height: 265px; */
+    padding: 10px 0 60px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
-    height: 249px;
-    padding: 60px 0 0 0;
+    /* height: 249px; */
+    padding: 40px 0 40px 0;
   }
   .players .athlets_color3 {
     background-color: #090c35;
-    height: 223px;
-    padding: 60px 0 0 0;
+    /* height: 223px; */
+    padding: 60px 0 40px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -744,7 +719,6 @@ body {
 }
 .chapter_2 .be_active_pre_header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #5e42b0;
@@ -848,7 +822,7 @@ body {
     margin: 0 0 0 32px;
     padding-top: 84px;
     font-size: 4.5rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     font-weight: bold;
     line-height: 1.0;
     letter-spacing: 0.4rem;
@@ -904,7 +878,7 @@ body {
   .chapter_2 .be_active_header {
     margin: 260px 0 0 129px;
     font-size: 4.5rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     font-weight: bold;
     line-height: 1.0;
     letter-spacing: 0.25rem;
@@ -926,7 +900,7 @@ body {
 /* === styles for be_active === */
 @media (min-width: 961px) {
   .be_active .be_active_picture {
-    height: 683px;
+    /* height: 683px; */
   }
   .be_active .be_active_header {
     margin-top: 200px;
@@ -939,7 +913,7 @@ body {
     flex-direction: row-reverse;
   }
   .find_contact .be_active_picture {
-    height: 779px;
+    /* height: 779px; */
   }
   .find_contact .be_active_pre_header {
     position: relative;
@@ -953,7 +927,7 @@ body {
 /* === styles for work_it === */
 @media (min-width: 961px) {
   .work_it .be_active_picture {
-    height: 683px;
+    /* height: 683px; */
   }
   .work_it .be_active_header {
     margin: 100px 0 0 60px;
@@ -966,7 +940,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 .footer_big_logo {
@@ -1007,7 +980,7 @@ body {
   }
   .footer_title {
     font-size: 2rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     letter-spacing: 0.1rem;
     color: #ffffff;
     font-weight: bold;
@@ -1063,7 +1036,7 @@ body {
   }
   .footer_title {
     font-size: 3rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     letter-spacing: 0.1rem;
     color: #ffffff;
     font-weight: bold;
@@ -1111,7 +1084,6 @@ body {
     margin: 0 auto;
     width: 60%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -1141,7 +1113,7 @@ body {
   }
   .footer_title {
     font-size: 3.75rem;
-    font-family: "OpenSansBold";
+    font-family: "OpenSans";
     letter-spacing: 0.1rem;
     color: #ffffff;
     font-weight: bold;
