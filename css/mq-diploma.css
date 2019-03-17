@@ -392,6 +392,7 @@ body {
     box-sizing: border-box;
     /* margin 0; */
   }
+  .chapter_1 .chapter_1_heading,
   .athlets .athlets_info_zone,
   .athlets .athlets_info_section .athlets_info_zone {
     margin-left: 293px;
@@ -493,6 +494,7 @@ body {
   .athlets_info_section {
     box-sizing: border-box;
   }
+  .chapter_1 .chapter_1_heading,
   .athlets .athlets_info_zone,
   .athlets .athlets_info_section .athlets_info_zone {
     margin-left: calc(10% + 550px);
@@ -956,6 +958,11 @@ body {
 }
 .footer_big_logo_svg g {
   fill: #ffffff;
+}
+.footer_mid_margin,
+.footer_title,
+ .footer_subtitle {
+  display: block;
 }
 @media (max-width:640px) {
   .footer {
