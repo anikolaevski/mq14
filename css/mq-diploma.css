@@ -42,6 +42,10 @@ body {
   font-size: 0.625em;
   text-align: left;
 }
+.be_recruited,
+.play_college_sports  {
+  display: block;
+}
 
 @media (max-width:640px) {
   .top {
@@ -49,16 +53,17 @@ body {
     background-image: url("../images/export_smart_320.png");
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:flex-start;
     align-items: center;
   }
   .surface_logo {
     height: 36px;
     width: 132px;
+    margin-top: 33px;
   }
   .top_titles {
     width: 100%;
-    /* height: 140px; */
+    margin-top: 130px;
     max-width: 380px;
   }
   .be_recruited {
@@ -67,12 +72,11 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
     margin-left: 1.25rem;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     z-index: 115;
   }
-
   .play_college_sports {
     /* display: block; */
     font-size: 1.75rem;
@@ -80,16 +84,16 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.15rem;
     margin-left: 62.329px;
-    margin-top: 1.5rem;
+    /* margin-top: 60px; */
     margin-bottom: 0;
     z-index: 114;
     max-width: 220px;
   }
   .store_buttons {
     width: 100%;
-    margin: 0;
+    margin: 63px 0 0 0;
     flex-wrap: wrap;
     margin-bottom: 64px;
   }
@@ -104,10 +108,13 @@ body {
   .download_apple_store {
     margin-bottom: 14px;
   }
-
   .store_buttons_icon {
     width: 1.5rem;
     height: 1.5rem;
+    margin-left: 10px;
+  }
+  .apple_icon {
+    margin-top: -4px;
   }
   .dbl_lin1, .dbl_lin2 {
     font-family: "OpenSans";
@@ -297,9 +304,13 @@ body {
       font-weight: bold;
       line-height: 1.2em;
       text-align: left;
-      margin-top: 28px;
+      margin-top: 8px;
       margin-left: 20px;
       z-index: 109;
+    }
+    .footballer1 {
+      margin-top: -60px;
+      margin-left: 70px;
     }
     .athlets_info_section {
       /* height: 230px; */
@@ -309,17 +320,18 @@ body {
     .athlets .athlets_color1 {
       background-color: #ffffff;
       /* height: 160px; */
-      padding: 30px 0 60px 0;
+      padding: 0 0 0 0;
     }
     .athlets .athlets_color2 {
       background-color: #f5f4f9;
       /* height: 263px; */
-      padding: 60px 0 60px 0;
+      padding: 40px 0 30px 0;
     }
     .athlets .athlets_color3 {
       background-color: #5e42b0;
       /* height: 230px; */
-      padding: 30px 0 30px 0;
+      margin-top: -30px;
+      padding: 36px 0 1px 0;
     }
     .athlets_info_header {
       margin: 0 0 0 20px;
@@ -332,7 +344,7 @@ body {
       font-family: "OpenSans";
       font-weight: bold;
       color: #000000;
-      margin: 0;
+      /* margin-top: -20px; */
       padding: 0;
     }
     .athlets_pre_header_text1::after,
@@ -356,6 +368,7 @@ body {
       margin: 0 0 0 10px;
       z-index: 105;
     }
+
     .athlets_text {
       font-size: 1.0rem;
       font-family: "OpenSans";
@@ -364,7 +377,7 @@ body {
       color: #000000;
       line-height: 1.2em;
       text-align: left;
-      margin-top: 20px;
+      margin-top: 2px;
       margin-left: 20px;
       margin-bottom: 3rem;
       width: 90%;
@@ -421,9 +434,6 @@ body {
     height: 699px;
     width: 497px;
     background-size: auto;
-  }
-  .footballer2 {
-    display: none;
   }
   .athlets_info_header {
     margin: 0 0 0 20px;
@@ -602,26 +612,26 @@ body {
 
 @media (max-width:640px) {
   .players .basketballer1 {
-    /* background-image: url("../images/basketballer_302.png"); */
-    margin: 0 auto;
-    height: 248px;
-    width: 302px;
-    background-size: auto;
+    margin: -60px 0 0 10px;
   }
   .players .athlets_color1 {
     background-color: #ffffff;
     /* height: 160px; */
-    padding: 30px 0 30px 0;
+    padding: 30px 0 1px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 263px; */
-    padding: 60px 0 40px 0;
+    padding: 40px 0 20px 0;
+  }
+  .players .athlets_color2 .athlets_text {
+    margin-bottom: 30px;
+    letter-spacing: .02rem;
   }
   .players .athlets_color3 {
     background-color: #090c35;
     /* height: 230px; */
-    padding: 60px 0 40px 0;
+    padding: 36px 0 1px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -744,9 +754,8 @@ body {
 }
 
 @media (max-width:640px) {
-  .chapter_2 .be_active_picture {
+  .chapter_2 .be_active_picture >* {
     width: 100%;
-    height: auto;
     object-fit: cover;
     object-position: center top;
     z-index: 1;
@@ -755,7 +764,7 @@ body {
     position: absolute;
     width: 70px;
     height: 70px;
-    margin-top: -58px;
+    margin-top: -62px;
     margin-left: 20px;
   }
   .chapter_2 .be_active_pre_header_text {
@@ -768,8 +777,8 @@ body {
      z-index: 106;
    }
   .chapter_2 .be_active_text_zone {
-    height: 271px;
-    margin: 0;
+    /* height: 271px; */
+    margin: 0 0 78px 0;
   }
   .chapter_2 .be_active_header {
     margin: 0 0 0 20px;
@@ -781,8 +790,8 @@ body {
     color: #e7e7e7;
   }
   .chapter_2 .be_active_text {
-    width: 70%;
-    margin: 20px 0 0 20px;
+    width: 82%;
+    margin: 10px 0 0 20px;
     font-size: 1.0rem;
     font-family: "OpenSans";
     font-weight: bold;
@@ -900,6 +909,11 @@ body {
 }
 
 /* === styles for be_active === */
+@media (max-width: 640px) {
+  .be_active .be_active_text {
+    letter-spacing: .05rem;
+  }
+}
 @media (min-width: 961px) {
   .be_active .be_active_picture {
     /* height: 683px; */
@@ -910,6 +924,15 @@ body {
   }
 }
 /* === styles for find_contact === */
+@media (max-width: 640px) {
+  .find_contact .be_active_text_zone {
+    margin-bottom: 81px;
+  }
+  .find_contact .be_active_text {
+    letter-spacing: .022rem;
+  }
+}
+
 @media (min-width: 961px) {
   .find_contact {
     flex-direction: row-reverse;
@@ -927,6 +950,16 @@ body {
   }
 }
 /* === styles for work_it === */
+@media (max-width: 640px) {
+  .work_it .be_active_text_zone {
+    margin-bottom: 68px;
+  }
+  .work_it .be_active_text {
+    width: 90%;
+    letter-spacing: .04rem;
+    line-height: 1.25;
+  }
+}
 @media (min-width: 961px) {
   .work_it .be_active_picture {
     /* height: 683px; */
@@ -942,7 +975,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .footer_big_logo {
   margin: 0 auto;
@@ -974,7 +1006,15 @@ body {
     background-color: rgba(30, 34, 68, 0.9);
     background-blend-mode: multiply;
     width: 100%;
-    height: 568px;
+    align-items: center;
+  }
+  .footer_top {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .footer_big_logo {
     width: 72px;
@@ -988,13 +1028,13 @@ body {
   .footer_title {
     font-size: 2rem;
     font-family: "OpenSans";
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 36px;
     margin-bottom: 0;
     z-index: 100;
   }
@@ -1007,11 +1047,13 @@ body {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 6px;
+    padding-top: 0px;
     z-index: 100;
   }
   .footer .store_buttons {
-    margin-top: 76px;
+    margin-top: 52px;
+    margin-bottom: 50px;
     z-index: 100;
   }
   .footer .surface_logo {
