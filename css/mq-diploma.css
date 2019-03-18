@@ -131,56 +131,58 @@ body {
   .surface_logo {
     height: 56px;
     width: 205px;
+    margin-top: 39px;
+    margin-left: 16px;
   }
   .top_titles {
     width: 100%;
+    margin-top: 174px;
   }
   .be_recruited {
-    font-size: 4rem;
+    display: block;
+    font-size: 4.0rem;
     font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 4rem;
-    margin-left: 90px;
-    margin-right: 0;
+    letter-spacing: 0.28rem;
+    margin-left: 86px;
+    /* margin-right: 0; */
     margin-bottom: 0;
     padding: 0;
     z-index: 100;
   }
   .play_college_sports {
+    display: block;
     font-size: 4rem;
     font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
-    line-height: 5rem;
+    letter-spacing: 0.35rem;
+    line-height: 4rem;
     margin-left: 25.5%;
-    margin-top: 0px;
+    margin-top: 12px;
     margin-bottom: 0;
-    max-width: 500px;
+    max-width: 550px;
     padding: 0;
     z-index: 100;
   }
   .store_buttons {
     width: 100%;
+    margin-top: 286px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
   .download_apple_store, .get_on_google_play {
-    margin: 0;
     border-radius: 3rem;
-    width: 41.06%;
+    width: 41.5%;
     height: 77px;
     z-index: 124;
   }
   .download_apple_store {
+    margin-left: 15px;
     margin-right: 2rem;
-  }
-
-  .download_button_label {
-    font-size: 0.8rem;
-    width: 50%;
-    margin-left: 1rem;
   }
   .dbl_lin1 {
     font-family: "OpenSans";
@@ -190,10 +192,34 @@ body {
     font-family: "OpenSans";
     font-weight: bold;
   }
-  .store_buttons_icon {
+  /* .store_buttons_icon {
     width: 3rem;
     height: 3rem;
+  } */
+  .google_icon {
+    margin-left: 20px;
+    width: 45.6px;
+    height: 50px;
   }
+  .apple_icon {
+    margin-left: -12px;
+    margin-top: -6px;
+    width: 43.2px;
+    height: 50.4px;
+  }
+  .download_apple_store .download_button_label {
+    font-size: 0.8rem;
+    width: 50%;
+    margin-left: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .get_on_google_play .download_button_label {
+    font-size: 0.8rem;
+    width: 50%;
+    margin-left: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
 }
 
 @media (min-width: 961px) {
