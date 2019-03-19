@@ -122,17 +122,19 @@ body {
 
 @media (min-width:641px) and (max-width: 960px) {
   .top {
-    height: 960px;
+    /* width: 768px; */
+    /* height:  */
     background-image: url("../images/export_smart_768.png");
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: cover;
   }
   .surface_logo {
     height: 56px;
     width: 205px;
     margin-top: 39px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
   .top_titles {
     width: 100%;
@@ -167,21 +169,22 @@ body {
     padding: 0;
     z-index: 100;
   }
-  .store_buttons {
+   .top .store_buttons {
     width: 100%;
     margin-top: 286px;
+    margin-bottom: 90px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
   .download_apple_store, .get_on_google_play {
     border-radius: 3rem;
-    width: 41.5%;
+    width: 40%;
     height: 77px;
     z-index: 124;
   }
   .download_apple_store {
-    margin-left: 15px;
+    /* margin-left: 15px; */
     margin-right: 2rem;
   }
   .dbl_lin1 {
@@ -192,10 +195,6 @@ body {
     font-family: "OpenSans";
     font-weight: bold;
   }
-  /* .store_buttons_icon {
-    width: 3rem;
-    height: 3rem;
-  } */
   .google_icon {
     margin-left: 20px;
     width: 45.6px;
@@ -414,14 +413,18 @@ body {
 }
 
 @media (min-width: 641px) and (max-width:960px) {
+  .athlets {
+    width: 100%;
+  }
   .athlets_title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: "OpenSans";
     color: #e7e7e7;
     font-weight: bold;
     line-height: 1.2;
+    letter-spacing: 0.5rem;
     text-align: left;
-    margin-top: 72px;
+    margin-top: 70px;
     margin-bottom: 0;
     padding: 0;
     z-index: 109;
@@ -438,24 +441,22 @@ body {
   .athlets .athlets_color1 {
     background-color: #ffffff;
     /* height: 160px; */
-    padding: 20px 0 40px 0;
+    padding: 28px 0 34px 0;
   }
   .athlets .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 236px; */
-    padding: 40px 0 10px 0;
+    padding: 20px 0 30px 0;
   }
   .athlets .athlets_color3 {
     background-color: #5e42b0;
     /* height: 180px; */
-    padding: 40px 0 20px 0;
+    padding: 24px 0 32px 0;
   }
   .footballer1 {
-    /* background-image: url("../images/footballer_497.png"); */
     position: absolute;
-    /* top: 95px; */
-    margin-top: -85px;
-    left: -170px;
+    margin-top: -63px;
+    left: -162px;
     height: 699px;
     width: 497px;
     background-size: auto;
@@ -467,7 +468,7 @@ body {
     align-items: center;
   }
   .athlets_pre_header_text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "OpenSans";
     font-weight: bold;
     color: #000000;
@@ -496,16 +497,17 @@ body {
     z-index: 105;
   }
   .athlets_text {
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-family: "OpenSans";
     font-weight: normal;
     letter-spacing: .05rem;
     color: #000000;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 6px;
     margin-left: 20px;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
+    max-width: 59%;
     /* width: 90%; */
     z-index: 102;
   }
@@ -670,8 +672,8 @@ body {
   .basketballer1 {
     /* background-image: url("../images/basketballer_436.png"); */
     position: absolute;
-    margin-top: -115px;
-    margin-left: 337px;
+    margin-top: -117px;
+    left: 331px;
     right: 0%;
     height: 565px;
     width: 436px;
@@ -679,24 +681,24 @@ body {
   }
   .players .athlets_info_zone,
   .players .athlets_info_section .athlets_info_zone {
-    margin-left: 4.94%;
-    width: calc(100% - 436px);
+    margin-left: 4.3%;
+    width: calc(100% - 360px);
     /* width: 52%; */
   }
   .players .athlets_color1 {
     background-color: #ffffff;
     /* height: 230px; */
-    padding: 30px 0 10px 0;
+    padding: 30px 0 30px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 181px; */
-    padding: 30px 0 10px 0;
+    padding: 24px 0 32px 0;
   }
   .players .athlets_color3 {
     background-color: #090c35;
     /* height: 180px; */
-    padding: 30px 0 20px 0;
+    padding: 24px 0 32px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -704,6 +706,9 @@ body {
     width: 15px;
     height: 4px;
     margin: 0;
+  }
+  .players .athlets_color3 .athlets_text {
+    letter-spacing: 0.09rem;
   }
 }
 @media (min-width: 961px) {
@@ -827,7 +832,7 @@ body {
   }
 }
 @media (min-width: 641px) and (max-width:960px) {
-  .chapter_2 .be_active_picture {
+  .chapter_2 .be_active_picture >* {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -836,13 +841,13 @@ body {
   }
   .chapter_2 .be_active_pre_header {
     position: absolute;
-    width: 118px;
+    width: 116px;
     height: 116px;
-    margin-top: -58px;
-    margin-left: 34px;
+    margin-top: -84px;
+    margin-left: 32px;
   }
   .chapter_2 .be_active_pre_header_text {
-    font-size: 1.3125rem;
+    font-size: 1.5rem;
   }
   .chapter_2 .be_active_pre_header_text::after {
     width: 24px;
@@ -851,12 +856,13 @@ body {
     z-index: 106;
   }
   .chapter_2 .be_active_text_zone {
-    height: 417px;
+    /* height: 417px; */
     margin: 0;
+    padding-bottom: 100px;
   }
   .chapter_2 .be_active_header {
-    margin: 0 0 0 32px;
-    padding-top: 84px;
+    margin: 0 0 0 24px;
+    padding-top: 80px;
     font-size: 4.5rem;
     font-family: "OpenSans";
     font-weight: bold;
@@ -865,12 +871,12 @@ body {
     color: #e7e7e7;
   }
   .chapter_2 .be_active_text {
-    width: 84.5%;
-    margin: 32px 0 0 32px;
+    width: 86.5%;
+    margin: 26px 0 0 32px;
     font-size: 1.5rem;
     font-family: "OpenSans";
     font-weight: normal;
-    letter-spacing: .05rem;
+    letter-spacing: .07rem;
     color: #000000;
     line-height: 1.2;
     text-align: left;
@@ -957,13 +963,20 @@ body {
     letter-spacing: .022rem;
   }
 }
-
+@media (min-width: 641px) and (max-width:960px) {
+  .find_contact .be_active_pre_header {
+    margin-top: -96px;
+  }
+  .find_contact .be_active_text {
+    margin-top: 18px;
+  }
+  .chapter_2 .find_contact .be_active_text_zone {
+    padding-bottom: 104px;
+  }
+}
 @media (min-width: 961px) {
   .find_contact {
     flex-direction: row-reverse;
-  }
-  .find_contact .be_active_picture {
-    /* height: 779px; */
   }
   .find_contact .be_active_pre_header {
     position: relative;
@@ -985,6 +998,18 @@ body {
     line-height: 1.25;
   }
 }
+@media (min-width: 641px) and (max-width:960px) {
+  .work_it .be_active_pre_header {
+    margin-top: -94px;
+  }
+  .work_it .be_active_text {
+    margin-top: 18px;
+  }
+  .chapter_2 .work_it .be_active_text_zone {
+    padding-bottom: 104px;
+  }
+}
+
 @media (min-width: 961px) {
   .work_it .be_active_picture {
     /* height: 683px; */
@@ -1089,7 +1114,7 @@ body {
 
 @media (min-width: 641px) and (max-width:960px) {
   .footer {
-    padding-top: 126px;
+    padding-top: 132px;
     background-image: url("../images/game_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1109,22 +1134,22 @@ body {
     z-index: 100;
   }
   .footer_title {
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "OpenSans";
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.45rem;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 72px;
     margin-bottom: 0;
     z-index: 100;
   }
   .footer_subtitle {
-    font-size: 1.6875rem;
+    font-size: 2rem;
     font-family: "OpenSans";
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.15rem;
     color: #a496ca;
     font-weight: bold;
     text-transform: uppercase;
@@ -1134,11 +1159,12 @@ body {
     z-index: 100;
   }
   .footer .store_buttons {
-    margin-top: 260px;
+    margin-top: 266px;
+    justify-content: center;
     z-index: 100;
   }
   .footer .surface_logo {
-    margin-bottom: 10px;
+    margin: 54px auto 10px auto;
     z-index: 100;
   }
 }
