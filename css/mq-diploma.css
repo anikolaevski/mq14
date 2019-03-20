@@ -4,6 +4,7 @@ body {
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
+  font-family: "OpenSans";
 }
 
 /* === Styles for Top === */
@@ -36,7 +37,6 @@ body {
   width: 35%;
   margin: 0;
   padding: 0 0 0 0.5rem;
-  font-family: "OpenSans";
   color: #ffffff;
   font-size: 0.625em;
   text-align: left;
@@ -67,7 +67,6 @@ body {
   }
   .be_recruited {
     font-size: 1.75rem;
-    font-family: "OpenSans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -79,12 +78,11 @@ body {
   .play_college_sports {
     /* display: block; */
     font-size: 1.75rem;
-    font-family: "OpenSans";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
     letter-spacing: 0.15rem;
-    margin-left: 62.329px;
+    margin-left: 62px;
     /* margin-top: 60px; */
     margin-bottom: 0;
     z-index: 114;
@@ -115,41 +113,35 @@ body {
   .apple_icon {
     margin-top: -4px;
   }
-  .dbl_lin1, .dbl_lin2 {
+  /* .dbl_lin1, .dbl_lin2 {
     font-family: "OpenSans";
-  }
+  } */
 }
 
 @media (min-width:641px) and (max-width: 960px) {
   .top {
-    /* width: 768px; */
-    /* height:  */
     background-image: url("../images/export_smart_768.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
+    padding-top: 39px;
+    padding-bottom: 90px;
   }
   .surface_logo {
+    display: block;
     height: 56px;
     width: 205px;
-    margin-top: 39px;
-    /* margin-left: 16px; */
+    margin: 0 auto;
   }
   .top_titles {
     width: 100%;
-    margin-top: 174px;
+    margin-top: 172px;
   }
   .be_recruited {
     display: block;
     font-size: 4.0rem;
-    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 4rem;
-    letter-spacing: 0.28rem;
-    margin-left: 86px;
-    /* margin-right: 0; */
+    letter-spacing: 0.2rem;
+    margin-left: 84px;
     margin-bottom: 0;
     padding: 0;
     z-index: 100;
@@ -157,13 +149,12 @@ body {
   .play_college_sports {
     display: block;
     font-size: 4rem;
-    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
-    letter-spacing: 0.35rem;
-    line-height: 4rem;
-    margin-left: 25.5%;
-    margin-top: 12px;
+    letter-spacing: 0.23rem;
+    line-height: 1.2;
+    margin-left: 25%;
+    margin-top: 8px;
     margin-bottom: 0;
     max-width: 550px;
     padding: 0;
@@ -171,8 +162,8 @@ body {
   }
    .top .store_buttons {
     width: 100%;
-    margin-top: 286px;
-    margin-bottom: 90px;
+    margin-top: 300px;
+    /* margin-bottom: 90px; */
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -188,11 +179,9 @@ body {
     margin-right: 2rem;
   }
   .dbl_lin1 {
-    font-family: "OpenSans";
     font-weight: 400;
   }
   .dbl_lin2 {
-    font-family: "OpenSans";
     font-weight: bold;
   }
   .google_icon {
@@ -201,8 +190,8 @@ body {
     height: 50px;
   }
   .apple_icon {
-    margin-left: -12px;
-    margin-top: -6px;
+    margin-left: -16px;
+    margin-top: -4px;
     width: 43.2px;
     height: 50.4px;
   }
@@ -210,13 +199,15 @@ body {
     font-size: 0.8rem;
     width: 50%;
     margin-left: 1rem;
-    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.07rem;
   }
   .get_on_google_play .download_button_label {
     font-size: 0.8rem;
     width: 50%;
     margin-left: 1rem;
-    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    letter-spacing: 0.09rem;
   }
 
 }
@@ -227,20 +218,23 @@ body {
     background-image: url("../images/export_smart_1920.png");
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
   .surface_logo {
-    height: 56px;
-    width: 205px;
+    height: 94px;
+    width: 440px;
+    margin-top: 47px;
   }
   .top_titles {
     width: 100%;
+    margin-top: 260px;
   }
   .be_recruited {
-    font-size: 5rem;
-    font-family: "OpenSans";
+    font-size: 6rem;
     color: #ffffff;
     font-weight: bold;
+    /* letter-spacing: 0.1rem; */
     line-height: 1.4;
     min-width: 640px;
     text-align: left;
@@ -251,11 +245,10 @@ body {
   }
   .play_college_sports {
     font-size: 5rem;
-    font-family: "OpenSans";
     color: #ffffff;
     font-weight: bold;
     line-height: 1.4;
-    min-width: 640px;
+    /* min-width: 640px; */
     text-align: right;
     margin-top: 0;
     margin-right: 10.26%;
@@ -285,11 +278,9 @@ body {
     margin-left: 1rem;
   }
   .dbl_lin1 {
-    font-family: "OpenSans";
     font-weight: 400;
   }
   .dbl_lin2 {
-    font-family: "OpenSans";
     font-weight: bold;
   }
   .store_buttons_icon {
@@ -323,7 +314,6 @@ body {
   @media (max-width:640px) {
     .athlets_title {
       font-size: 3.5rem;
-      font-family: "OpenSans";
       color: #e7e7e7;
       font-weight: bold;
       line-height: 1.2em;
@@ -365,7 +355,6 @@ body {
     }
     .athlets_pre_header_text {
       font-size: 1rem;
-      font-family: "OpenSans";
       font-weight: bold;
       color: #000000;
       /* margin-top: -20px; */
@@ -382,7 +371,6 @@ body {
     }
     .athlets_header {
       font-size: 1.4375rem;
-      font-family: "OpenSans";
       letter-spacing: .2rem;
       color: #c1c1c1;
       font-weight: bold;
@@ -395,7 +383,6 @@ body {
 
     .athlets_text {
       font-size: 1.0rem;
-      font-family: "OpenSans";
       font-weight: normal;
       letter-spacing: .04rem;
       color: #000000;
@@ -417,17 +404,24 @@ body {
     width: 100%;
   }
   .athlets_title {
-    font-size: 4.5rem;
-    font-family: "OpenSans";
+    font-size: 5rem;
     color: #e7e7e7;
     font-weight: bold;
     line-height: 1.2;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.07rem;
     text-align: left;
-    margin-top: 70px;
+    margin-top: 66px;
     margin-bottom: 0;
     padding: 0;
     z-index: 109;
+  }
+  .footballer1 {
+    position: absolute;
+    margin-top: -67px;
+    left: -163px;
+    height: 699px;
+    width: 497px;
+    background-size: auto;
   }
   .athlets_info_section {
     box-sizing: border-box;
@@ -441,25 +435,17 @@ body {
   .athlets .athlets_color1 {
     background-color: #ffffff;
     /* height: 160px; */
-    padding: 28px 0 34px 0;
+    padding: 32px 0 34px 0;
   }
   .athlets .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 236px; */
-    padding: 20px 0 30px 0;
+    padding: 26px 0 32px 0;
   }
   .athlets .athlets_color3 {
     background-color: #5e42b0;
     /* height: 180px; */
-    padding: 24px 0 32px 0;
-  }
-  .footballer1 {
-    position: absolute;
-    margin-top: -63px;
-    left: -162px;
-    height: 699px;
-    width: 497px;
-    background-size: auto;
+    padding: 32px 0 33px 0;
   }
   .athlets_info_header {
     margin: 0 0 0 20px;
@@ -468,8 +454,8 @@ body {
     align-items: center;
   }
   .athlets_pre_header_text {
-    font-size: 1.7rem;
-    font-family: "OpenSans";
+    font-size: 2rem;
+    line-height: 1.2;
     font-weight: bold;
     color: #000000;
     margin: 0;
@@ -480,14 +466,13 @@ body {
   .athlets .athlets_pre_header_text3::after
    {
     border-radius: 1px;
-    width: 15px;
+    width: 16px;
     height: 4px;
-    margin: 0;
+    margin: 3px 0 0 0;
   }
   .athlets_header {
     font-size: 2rem;
-    font-family: "OpenSans";
-    letter-spacing: .2rem;
+    letter-spacing: 0.1rem;
     color: #c1c1c1;
     font-weight: bold;
     text-transform: uppercase;
@@ -498,28 +483,28 @@ body {
   }
   .athlets_text {
     font-size: 1rem;
-    font-family: "OpenSans";
     font-weight: normal;
-    letter-spacing: .05rem;
+    letter-spacing: .06rem;
     color: #000000;
     line-height: 1.8;
     text-align: left;
-    margin-top: 6px;
+    margin-top: 14px;
     margin-left: 20px;
     margin-bottom: 0;
-    max-width: 59%;
+    max-width: 60%;
     /* width: 90%; */
     z-index: 102;
   }
   .athlets_color3 .athlets_text {
     color: #ffffff;
+    margin-top: 11px;
+    letter-spacing: 0.05rem;
   }
 }
 
 @media (min-width: 961px) {
   .athlets_title {
     font-size: 4rem;
-    font-family: "OpenSans";
     color: #e7e7e7;
     font-weight: bold;
     line-height: 1.2;
@@ -574,7 +559,6 @@ body {
   }
   .athlets_pre_header_text {
     font-size: 1.5rem;
-    font-family: "OpenSans";
     font-weight: bold;
     color: #000000;
     margin: 0;
@@ -591,7 +575,6 @@ body {
   }
   .athlets_header {
     font-size: 1.75rem;
-    font-family: "OpenSans";
     letter-spacing: .15rem;
     color: #c1c1c1;
     font-weight: bold;
@@ -604,7 +587,6 @@ body {
   }
   .athlets_text {
     font-size: 0.92rem;
-    font-family: "OpenSans";
     font-weight: normal;
     letter-spacing: .05rem;
     color: #000000;
@@ -672,33 +654,36 @@ body {
   .basketballer1 {
     /* background-image: url("../images/basketballer_436.png"); */
     position: absolute;
-    margin-top: -117px;
-    left: 331px;
-    right: 0%;
+    margin-top: -124px;
+    /* left: auto; */
+    right: 0px;
     height: 565px;
     width: 436px;
     background-size: auto;
   }
+  .players .athlets_title {
+    letter-spacing: 0.06rem;
+  }
   .players .athlets_info_zone,
   .players .athlets_info_section .athlets_info_zone {
-    margin-left: 4.3%;
+    margin-left: 4.1%;
     width: calc(100% - 360px);
     /* width: 52%; */
   }
   .players .athlets_color1 {
     background-color: #ffffff;
     /* height: 230px; */
-    padding: 30px 0 30px 0;
+    padding: 30px 0 34px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 181px; */
-    padding: 24px 0 32px 0;
+    padding: 28px 0 34px 0;
   }
   .players .athlets_color3 {
     background-color: #090c35;
     /* height: 180px; */
-    padding: 24px 0 32px 0;
+    padding: 30px 0 32px 0;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -709,6 +694,7 @@ body {
   }
   .players .athlets_color3 .athlets_text {
     letter-spacing: 0.09rem;
+    margin-top: 14px;
   }
 }
 @media (min-width: 961px) {
@@ -769,7 +755,6 @@ body {
 }
 .chapter_2 .be_active_pre_header_text {
   color: #ffffff;
-  font-family: "OpenSans";
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -814,7 +799,6 @@ body {
     margin: 0 0 0 20px;
     padding-top: 20px;
     font-size: 2rem;
-    font-family: "OpenSans";
     font-weight: bold;
     letter-spacing: 0.3rem;
     color: #e7e7e7;
@@ -823,7 +807,6 @@ body {
     width: 82%;
     margin: 10px 0 0 20px;
     font-size: 1.0rem;
-    font-family: "OpenSans";
     font-weight: bold;
     letter-spacing: .04rem;
     color: #000000;
@@ -864,7 +847,6 @@ body {
     margin: 0 0 0 24px;
     padding-top: 80px;
     font-size: 4.5rem;
-    font-family: "OpenSans";
     font-weight: bold;
     line-height: 1.0;
     letter-spacing: 0.4rem;
@@ -874,7 +856,6 @@ body {
     width: 86.5%;
     margin: 26px 0 0 32px;
     font-size: 1.5rem;
-    font-family: "OpenSans";
     font-weight: normal;
     letter-spacing: .07rem;
     color: #000000;
@@ -920,7 +901,6 @@ body {
   .chapter_2 .be_active_header {
     margin: 260px 0 0 129px;
     font-size: 4.5rem;
-    font-family: "OpenSans";
     font-weight: bold;
     line-height: 1.0;
     letter-spacing: 0.25rem;
@@ -930,7 +910,6 @@ body {
     width: 64.3%;
     margin: 112px 0 0 129px;
     font-size: 1.5rem;
-    font-family: "OpenSans";
     font-weight: normal;
     letter-spacing: .05rem;
     color: #000000;
@@ -967,10 +946,14 @@ body {
   .find_contact .be_active_pre_header {
     margin-top: -96px;
   }
+  .find_contact .be_active_header {
+    padding-top: 65px;
+  }
   .find_contact .be_active_text {
-    margin-top: 18px;
+    margin-top: 28px;
   }
   .chapter_2 .find_contact .be_active_text_zone {
+    padding-top: 0;
     padding-bottom: 104px;
   }
 }
@@ -1006,7 +989,14 @@ body {
     margin-top: 18px;
   }
   .chapter_2 .work_it .be_active_text_zone {
-    padding-bottom: 104px;
+    padding-bottom: 110px;
+  }
+  .work_it .be_active_header {
+    padding-top: 70px;
+  }
+  .work_it .be_active_text {
+    margin-top: 30px;
+    /* letter-spacing: 0.08rem; */
   }
 }
 
@@ -1023,8 +1013,8 @@ body {
 .footer {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .footer_big_logo {
   margin: 0 auto;
@@ -1041,7 +1031,7 @@ body {
 .footer_big_logo_svg g {
   fill: #ffffff;
 }
-.footer_mid_margin,
+/* .footer_mid_margin, */
 .footer_title,
  .footer_subtitle {
   display: block;
@@ -1077,7 +1067,6 @@ body {
   }
   .footer_title {
     font-size: 2rem;
-    font-family: "OpenSans";
     letter-spacing: 0.2rem;
     color: #ffffff;
     font-weight: bold;
@@ -1090,7 +1079,6 @@ body {
   }
   .footer_subtitle {
     font-size: 1rem;
-    font-family: "OpenSans";
     letter-spacing: 0.01rem;
     color: #a496ca;
     font-weight: bold;
@@ -1114,7 +1102,7 @@ body {
 
 @media (min-width: 641px) and (max-width:960px) {
   .footer {
-    padding-top: 132px;
+    padding-top: 126px;
     background-image: url("../images/game_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1125,7 +1113,7 @@ body {
     height: 958px;
   }
   .footer_big_logo {
-    width: 130px;
+    width: 137px;
     height: 137px;
     display: flex;
     justify-content: center;
@@ -1133,10 +1121,14 @@ body {
     border-radius: 36px;
     z-index: 100;
   }
+  .footer_big_logo_svg {
+    width: 104px;
+    height: 87px;
+    z-index: 100;
+  }
   .footer_title {
     font-size: 5rem;
-    font-family: "OpenSans";
-    letter-spacing: 0.45rem;
+    letter-spacing: 0.3rem;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
@@ -1148,8 +1140,7 @@ body {
   }
   .footer_subtitle {
     font-size: 2rem;
-    font-family: "OpenSans";
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.11rem;
     color: #a496ca;
     font-weight: bold;
     text-transform: uppercase;
@@ -1159,7 +1150,7 @@ body {
     z-index: 100;
   }
   .footer .store_buttons {
-    margin-top: 266px;
+    margin-top: 286px;
     justify-content: center;
     z-index: 100;
   }
@@ -1198,12 +1189,12 @@ body {
     border-radius: 36px;
     z-index: 100;
   }
-  .footer_mid_margin {
+  /* .footer_mid_margin {
     width: 36px;
     height: 137px;
     flex-shrink: 0;
     flex-grow: 0;
-  }
+  } */
   .footer_titles {
     flex-shrink: 0;
     display: flex;
@@ -1213,7 +1204,6 @@ body {
   }
   .footer_title {
     font-size: 3.75rem;
-    font-family: "OpenSans";
     letter-spacing: 0.1rem;
     color: #ffffff;
     font-weight: bold;
@@ -1225,7 +1215,6 @@ body {
   }
   .footer_subtitle {
     font-size: 1.5rem;
-    font-family: "OpenSans";
     letter-spacing: 0.01rem;
     color: #a496ca;
     font-weight: bold;
