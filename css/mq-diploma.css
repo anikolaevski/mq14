@@ -48,17 +48,15 @@ body {
 
 @media (max-width:640px) {
   .top {
-    height: 568px;
     background-image: url("../images/export_smart_320.png");
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 85px;
   }
   .surface_logo {
+    display: block;
     height: 36px;
     width: 132px;
-    margin-top: 33px;
+    margin: 0 auto;
   }
   .top_titles {
     width: 100%;
@@ -66,33 +64,32 @@ body {
     max-width: 380px;
   }
   .be_recruited {
+    display: block;
+    font-size: 1.75rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.09rem;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    z-index: 115;
+  }
+  .play_college_sports {
+    display: block;
     font-size: 1.75rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
     letter-spacing: 0.1rem;
-    margin-left: 1.25rem;
-    margin-bottom: 18px;
-    z-index: 115;
-  }
-  .play_college_sports {
-    /* display: block; */
-    font-size: 1.75rem;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-    letter-spacing: 0.15rem;
-    margin-left: 62px;
-    /* margin-top: 60px; */
+    margin-left: 19.375%;
     margin-bottom: 0;
     z-index: 114;
-    max-width: 220px;
+    max-width: 75%;
   }
   .store_buttons {
     width: 100%;
-    margin: 63px 0 0 0;
+    margin: 83px 0 0 0;
     flex-wrap: wrap;
-    margin-bottom: 64px;
   }
   .download_apple_store, .get_on_google_play {
     border-radius: 2rem;
@@ -101,6 +98,12 @@ body {
     height: 2.1875rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .download_button_label {
+    font-size: 0.5rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.4;
+    /* width: 55%; */
   }
   .download_apple_store {
     margin-bottom: 14px;
@@ -113,9 +116,6 @@ body {
   .apple_icon {
     margin-top: -4px;
   }
-  /* .dbl_lin1, .dbl_lin2 {
-    font-family: "OpenSans";
-  } */
 }
 
 @media (min-width:641px) and (max-width: 960px) {
@@ -295,7 +295,12 @@ body {
     padding: 0;
   }
   .athlets_pre_header {
-    padding: 0;
+    padding: 0 0 3px 0;
+  }
+  .athlets_pre_header_text1,
+  .athlets_pre_header_text2,
+  .athlets_pre_header_text3 {
+    display: block;
   }
   .athlets_pre_header_text1::after,
   .athlets_pre_header_text2::after {
@@ -312,19 +317,22 @@ body {
   }
 
   @media (max-width:640px) {
+    .chapter_1 {
+      padding-top: 12px;
+    }
     .athlets_title {
-      font-size: 3.5rem;
+      font-size: 3.15rem;
       color: #e7e7e7;
       font-weight: bold;
       line-height: 1.2em;
       text-align: left;
-      margin-top: 8px;
-      margin-left: 20px;
+      margin: 0 0 0 20px;
       z-index: 109;
     }
     .footballer1 {
-      margin-top: -60px;
-      margin-left: 70px;
+      margin-top: -14px;
+      margin-left: 21.875%;
+      /* margin-left: 70px; */
     }
     .athlets_info_section {
       /* height: 230px; */
@@ -334,18 +342,18 @@ body {
     .athlets .athlets_color1 {
       background-color: #ffffff;
       /* height: 160px; */
-      padding: 0 0 0 0;
+      padding: 14px 0 34px 0;
     }
     .athlets .athlets_color2 {
       background-color: #f5f4f9;
       /* height: 263px; */
-      padding: 40px 0 30px 0;
+      padding: 54px 0 34px 0;
     }
     .athlets .athlets_color3 {
       background-color: #5e42b0;
       /* height: 230px; */
-      margin-top: -30px;
-      padding: 36px 0 1px 0;
+      /* margin-top: -30px; */
+      padding: 52px 0 38px 0;
     }
     .athlets_info_header {
       margin: 0 0 0 20px;
@@ -353,11 +361,12 @@ body {
       flex-wrap: nowrap;
       align-items: center;
     }
-    .athlets_pre_header_text {
-      font-size: 1rem;
+    .athlets_pre_header_text1,
+    .athlets_pre_header_text2 {
+      font-size: 0.9rem;
       font-weight: bold;
       color: #000000;
-      /* margin-top: -20px; */
+      padding-bottom: 3px;
       padding: 0;
     }
     .athlets_pre_header_text1::after,
@@ -371,31 +380,32 @@ body {
     }
     .athlets_header {
       font-size: 1.4375rem;
-      letter-spacing: .2rem;
+      letter-spacing: .07rem;
       color: #c1c1c1;
       font-weight: bold;
       text-transform: uppercase;
       line-height: 1.5em;
       text-align: left;
-      margin: 0 0 0 10px;
+      margin: 0 0 0 6px;
       z-index: 105;
     }
 
-    .athlets_text {
+    .athlets .athlets_text {
       font-size: 1.0rem;
       font-weight: normal;
-      letter-spacing: .04rem;
+      letter-spacing: .02rem;
       color: #000000;
-      line-height: 1.2em;
+      line-height: 1.15;
       text-align: left;
-      margin-top: 2px;
+      margin-top: 17px;
       margin-left: 20px;
-      margin-bottom: 3rem;
+      /* margin-bottom: 3rem; */
       width: 90%;
       z-index: 102;
     }
     .athlets_color3 .athlets_text {
       color: #ffffff;
+      width: 85%;
     }
 }
 
@@ -454,7 +464,7 @@ body {
     align-items: center;
   }
   .athlets_pre_header_text {
-    font-size: 2rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     font-weight: bold;
     color: #000000;
@@ -620,27 +630,47 @@ body {
 
 
 @media (max-width:640px) {
+  .players {
+    padding-top: 10px;
+  }
+  .players .athlets_title {
+    margin-left: 16px;
+  }
+  .players .athlets_info_zone {
+    margin-left: 20px;
+  }
   .players .basketballer1 {
-    margin: -60px 0 0 10px;
+    margin: -12px 0 0 10px;
   }
   .players .athlets_color1 {
     background-color: #ffffff;
     /* height: 160px; */
-    padding: 30px 0 1px 0;
+    padding: 44px 0 36px 0;
   }
   .players .athlets_color2 {
     background-color: #f5f4f9;
     /* height: 263px; */
-    padding: 40px 0 20px 0;
+    padding: 50px 0 36px 0;
+  }
+  .players .athlets_color1 .athlets_text {
+    line-height: 1.2;
+    letter-spacing: .02rem;
+    width: 85%;
   }
   .players .athlets_color2 .athlets_text {
-    margin-bottom: 30px;
+    line-height: 1.2;
     letter-spacing: .02rem;
+    width: 90%;
   }
   .players .athlets_color3 {
     background-color: #090c35;
     /* height: 230px; */
-    padding: 36px 0 1px 0;
+    padding: 50px 0 36px 0;
+  }
+  .players .athlets_color3 .athlets_text {
+    line-height: 1.2;
+    letter-spacing: .02rem;
+    width: 90%;
   }
   .players .athlets_pre_header_text3::after
    {
@@ -798,17 +828,17 @@ body {
   .chapter_2 .be_active_header {
     margin: 0 0 0 20px;
     padding-top: 20px;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: bold;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.09rem;
     color: #e7e7e7;
   }
   .chapter_2 .be_active_text {
     width: 82%;
-    margin: 10px 0 0 20px;
+    margin: 12px 0 0 20px;
     font-size: 1.0rem;
     font-weight: bold;
-    letter-spacing: .04rem;
+    letter-spacing: .01rem;
     color: #000000;
     line-height: 1.2;
     text-align: left;
@@ -921,7 +951,7 @@ body {
 /* === styles for be_active === */
 @media (max-width: 640px) {
   .be_active .be_active_text {
-    letter-spacing: .05rem;
+    letter-spacing: .02rem;
   }
 }
 @media (min-width: 961px) {
@@ -936,10 +966,12 @@ body {
 /* === styles for find_contact === */
 @media (max-width: 640px) {
   .find_contact .be_active_text_zone {
-    margin-bottom: 81px;
+    margin-bottom: 79px;
   }
   .find_contact .be_active_text {
-    letter-spacing: .022rem;
+    margin-top: 16px;
+    letter-spacing: .01rem;
+    width: 90%;
   }
 }
 @media (min-width: 641px) and (max-width:960px) {
@@ -1039,6 +1071,7 @@ body {
 @media (max-width:640px) {
   .footer {
     padding-top: 100px;
+    padding-bottom: 10px;
     background-image: url("../images/game_767.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1051,10 +1084,10 @@ body {
   .footer_top {
     margin: 0 auto;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
   .footer_big_logo {
     width: 72px;
@@ -1065,37 +1098,43 @@ body {
     border-radius: 18px;
     z-index: 100;
   }
+  .footer_big_logo_svg {
+    /* width: 72px; */
+    height: 49px;
+    z-index: 100;
+  }
   .footer_title {
     font-size: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-top: 36px;
+    margin-top: 54px;
     margin-bottom: 0;
     z-index: 100;
   }
   .footer_subtitle {
-    font-size: 1rem;
-    letter-spacing: 0.01rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.005rem;
     color: #a496ca;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 8px;
     padding-top: 0px;
     z-index: 100;
   }
   .footer .store_buttons {
-    margin-top: 52px;
-    margin-bottom: 50px;
+    margin-top: 76px;
+    /* font-size: 1.1em; */
     z-index: 100;
   }
   .footer .surface_logo {
-    margin-bottom: 10px;
+    margin-top: 82px;
+    /* margin-bottom: 10px; */
     z-index: 100;
   }
 }
